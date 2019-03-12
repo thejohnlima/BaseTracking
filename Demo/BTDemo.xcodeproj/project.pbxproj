@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82003C3E223735B7001012B2 /* BaseTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 82003C3C223735B7001012B2 /* BaseTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8229A6AD2237441400CDACD4 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6AC2237441400CDACD4 /* BaseTrackingProtocol.swift */; };
-		8229A6AF223746DA00CDACD4 /* BaseTrackingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6AE223746DA00CDACD4 /* BaseTrackingArea.swift */; };
+		8229A6BF2237516900CDACD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6BE2237516900CDACD4 /* AppDelegate.swift */; };
+		8229A6C12237516900CDACD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6C02237516900CDACD4 /* ViewController.swift */; };
+		8229A6C42237516900CDACD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C22237516900CDACD4 /* Main.storyboard */; };
+		8229A6C62237516B00CDACD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C52237516B00CDACD4 /* Assets.xcassets */; };
+		8229A6C92237516B00CDACD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */; };
+		8229A6D1223751FE00CDACD4 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D0223751FE00CDACD4 /* TrackingManager.swift */; };
+		8229A6D52237524700CDACD4 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D32237524700CDACD4 /* BaseTrackingProtocol.swift */; };
+		8229A6D62237524700CDACD4 /* BaseTrackingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D42237524700CDACD4 /* BaseTrackingArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82003C39223735B7001012B2 /* BaseTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82003C3C223735B7001012B2 /* BaseTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTracking.h; sourceTree = "<group>"; };
-		82003C3D223735B7001012B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8229A6AC2237441400CDACD4 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
-		8229A6AE223746DA00CDACD4 /* BaseTrackingArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTrackingArea.swift; sourceTree = "<group>"; };
+		8229A6BB2237516900CDACD4 /* BTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8229A6BE2237516900CDACD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8229A6C02237516900CDACD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8229A6C32237516900CDACD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8229A6C52237516B00CDACD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8229A6C82237516B00CDACD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8229A6CA2237516B00CDACD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8229A6D0223751FE00CDACD4 /* TrackingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingManager.swift; sourceTree = "<group>"; };
+		8229A6D32237524700CDACD4 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
+		8229A6D42237524700CDACD4 /* BaseTrackingArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		82003C36223735B7001012B2 /* Frameworks */ = {
+		8229A6B82237516900CDACD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,129 +41,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		82003C2F223735B7001012B2 = {
+		8229A6B22237516900CDACD4 = {
 			isa = PBXGroup;
 			children = (
-				82003C3B223735B7001012B2 /* BaseTracking */,
-				82003C3A223735B7001012B2 /* Products */,
+				8229A6BD2237516900CDACD4 /* BTDemo */,
+				8229A6BC2237516900CDACD4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		82003C3A223735B7001012B2 /* Products */ = {
+		8229A6BC2237516900CDACD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				82003C39223735B7001012B2 /* BaseTracking.framework */,
+				8229A6BB2237516900CDACD4 /* BTDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		82003C3B223735B7001012B2 /* BaseTracking */ = {
+		8229A6BD2237516900CDACD4 /* BTDemo */ = {
 			isa = PBXGroup;
 			children = (
-				82003C3C223735B7001012B2 /* BaseTracking.h */,
-				82003C3D223735B7001012B2 /* Info.plist */,
-				8229A6AB22373DAF00CDACD4 /* Source */,
+				8229A6BE2237516900CDACD4 /* AppDelegate.swift */,
+				8229A6C02237516900CDACD4 /* ViewController.swift */,
+				8229A6D0223751FE00CDACD4 /* TrackingManager.swift */,
+				8229A6C22237516900CDACD4 /* Main.storyboard */,
+				8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */,
+				8229A6CA2237516B00CDACD4 /* Info.plist */,
+				8229A6C52237516B00CDACD4 /* Assets.xcassets */,
+				8229A6D22237524700CDACD4 /* Source */,
 			);
-			path = BaseTracking;
+			path = BTDemo;
 			sourceTree = "<group>";
 		};
-		8229A6AB22373DAF00CDACD4 /* Source */ = {
+		8229A6D22237524700CDACD4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8229A6AC2237441400CDACD4 /* BaseTrackingProtocol.swift */,
-				8229A6AE223746DA00CDACD4 /* BaseTrackingArea.swift */,
+				8229A6D32237524700CDACD4 /* BaseTrackingProtocol.swift */,
+				8229A6D42237524700CDACD4 /* BaseTrackingArea.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		82003C34223735B7001012B2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82003C3E223735B7001012B2 /* BaseTracking.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		82003C38223735B7001012B2 /* BaseTracking */ = {
+		8229A6BA2237516900CDACD4 /* BTDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82003C41223735B7001012B2 /* Build configuration list for PBXNativeTarget "BaseTracking" */;
+			buildConfigurationList = 8229A6CD2237516B00CDACD4 /* Build configuration list for PBXNativeTarget "BTDemo" */;
 			buildPhases = (
-				82003C34223735B7001012B2 /* Headers */,
-				82003C35223735B7001012B2 /* Sources */,
-				82003C36223735B7001012B2 /* Frameworks */,
-				82003C37223735B7001012B2 /* Resources */,
+				8229A6B72237516900CDACD4 /* Sources */,
+				8229A6B82237516900CDACD4 /* Frameworks */,
+				8229A6B92237516900CDACD4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BaseTracking;
-			productName = BaseTracking;
-			productReference = 82003C39223735B7001012B2 /* BaseTracking.framework */;
-			productType = "com.apple.product-type.framework";
+			name = BTDemo;
+			productName = BTDemo;
+			productReference = 8229A6BB2237516900CDACD4 /* BTDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		82003C30223735B7001012B2 /* Project object */ = {
+		8229A6B32237516900CDACD4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = limadeveloper;
 				TargetAttributes = {
-					82003C38223735B7001012B2 = {
+					8229A6BA2237516900CDACD4 = {
 						CreatedOnToolsVersion = 10.2;
-						LastSwiftMigration = 1020;
 					};
 				};
 			};
-			buildConfigurationList = 82003C33223735B7001012B2 /* Build configuration list for PBXProject "BaseTracking" */;
+			buildConfigurationList = 8229A6B62237516900CDACD4 /* Build configuration list for PBXProject "BTDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 82003C2F223735B7001012B2;
-			productRefGroup = 82003C3A223735B7001012B2 /* Products */;
+			mainGroup = 8229A6B22237516900CDACD4;
+			productRefGroup = 8229A6BC2237516900CDACD4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82003C38223735B7001012B2 /* BaseTracking */,
+				8229A6BA2237516900CDACD4 /* BTDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		82003C37223735B7001012B2 /* Resources */ = {
+		8229A6B92237516900CDACD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8229A6C92237516B00CDACD4 /* LaunchScreen.storyboard in Resources */,
+				8229A6C62237516B00CDACD4 /* Assets.xcassets in Resources */,
+				8229A6C42237516900CDACD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		82003C35223735B7001012B2 /* Sources */ = {
+		8229A6B72237516900CDACD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8229A6AF223746DA00CDACD4 /* BaseTrackingArea.swift in Sources */,
-				8229A6AD2237441400CDACD4 /* BaseTrackingProtocol.swift in Sources */,
+				8229A6D1223751FE00CDACD4 /* TrackingManager.swift in Sources */,
+				8229A6D52237524700CDACD4 /* BaseTrackingProtocol.swift in Sources */,
+				8229A6C12237516900CDACD4 /* ViewController.swift in Sources */,
+				8229A6BF2237516900CDACD4 /* AppDelegate.swift in Sources */,
+				8229A6D62237524700CDACD4 /* BaseTrackingArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		8229A6C22237516900CDACD4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8229A6C32237516900CDACD4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8229A6C82237516B00CDACD4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		82003C3F223735B7001012B2 /* Debug */ = {
+		8229A6CB2237516B00CDACD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +216,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -205,19 +233,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		82003C40223735B7001012B2 /* Release */ = {
+		8229A6CC2237516B00CDACD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +277,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -263,64 +288,45 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		82003C42223735B7001012B2 /* Debug */ = {
+		8229A6CE2237516B00CDACD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BaseTracking/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = BTDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.BaseTracking;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.BTDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		82003C43223735B7001012B2 /* Release */ = {
+		8229A6CF2237516B00CDACD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BaseTracking/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = BTDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.BaseTracking;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.BTDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,25 +335,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82003C33223735B7001012B2 /* Build configuration list for PBXProject "BaseTracking" */ = {
+		8229A6B62237516900CDACD4 /* Build configuration list for PBXProject "BTDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82003C3F223735B7001012B2 /* Debug */,
-				82003C40223735B7001012B2 /* Release */,
+				8229A6CB2237516B00CDACD4 /* Debug */,
+				8229A6CC2237516B00CDACD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82003C41223735B7001012B2 /* Build configuration list for PBXNativeTarget "BaseTracking" */ = {
+		8229A6CD2237516B00CDACD4 /* Build configuration list for PBXNativeTarget "BTDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				82003C42223735B7001012B2 /* Debug */,
-				82003C43223735B7001012B2 /* Release */,
+				8229A6CE2237516B00CDACD4 /* Debug */,
+				8229A6CF2237516B00CDACD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 82003C30223735B7001012B2 /* Project object */;
+	rootObject = 8229A6B32237516900CDACD4 /* Project object */;
 }
