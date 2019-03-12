@@ -25,7 +25,7 @@ import Foundation
 public typealias BaseTrackingEventAction = (category: String?, action: String?, label: String?, value: NSNumber?)
 
 public protocol BaseTrackingProtocol: AnyObject {
-  func initialize()
+  func configure()
   func track(event action: BaseTrackingEventAction)
   func track(view name: String)
 }
