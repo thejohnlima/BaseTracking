@@ -5,8 +5,12 @@
 //  Created by John Lima on 11/03/19.
 //  Copyright © 2019 limadeveloper. All rights reserved.
 //
+//  **********************************
+//  Example unsing Firebase Analytics
+//  **********************************
 
 import Foundation
+import Firebase
 
 final class TrackingManager {
 
@@ -14,12 +18,12 @@ final class TrackingManager {
 
   private init() {}
 
-  private func initializeCrashlytics() {
+  private func configureCrashlytics() {
     // Do something here
   }
 
-  private func initializeAnalytics() {
-    // Do something here
+  private func configureAnalytics() {
+    FirebaseApp.configure()
   }
 
   private func tracking(view name: String) {
@@ -32,9 +36,9 @@ final class TrackingManager {
 }
 
 extension TrackingManager: BaseTrackingProtocol {
-  func initialize() {
-    initializeAnalytics()
-    initializeCrashlytics()
+  func configure() {
+    configureAnalytics()
+    configureCrashlytics()
   }
 
   func track(event action: BaseTrackingEventAction) {

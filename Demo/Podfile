@@ -1,0 +1,10 @@
+platform :ios, '9.3'
+
+target 'BTDemo' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for BTDemo
+  pod 'Firebase/Core'
+
+end
