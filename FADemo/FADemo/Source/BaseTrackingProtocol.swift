@@ -22,24 +22,18 @@
 
 import Foundation
 
-public protocol BaseTrackingArea: AnyObject {
-  associatedtype ScreenView: RawRepresentable
-  associatedtype EventCategory: RawRepresentable
-  associatedtype EventAction: RawRepresentable
-  associatedtype EventLabel: RawRepresentable
+public typealias BaseTrackingEventData = (category: String?, action: String?, label: String?, value: NSNumber?)
+public typealias BaseTrackingEventLogData = (name: String, parameters: [String: Any]?)
+public typealias BaseTrackingViewData = (name: String, className: String?)
 
-  static func trackView(name: ScreenView)
-  static func trackEvent(category: EventCategory, action: EventAction, label: EventLabel?, value: NSNumber?)
+public protocol BaseTrackingProtocol: AnyObject {
+  func configure()
+  func track(event data: BaseTrackingEventData)
+  func track(event log: BaseTrackingEventLogData)
+  func track(view data: BaseTrackingViewData)
 }
 
-public struct CustomRawRepresentable: RawRepresentable {
-  private var value: String
-
-  public init?(rawValue: String) {
-    self.value = rawValue
-  }
-
-  public var rawValue: String {
-    return self.value
-  }
+extension BaseTrackingProtocol {
+  func track(event data: BaseTrackingEventData) {}
+  func track(event log: BaseTrackingEventLogData) {}
 }
