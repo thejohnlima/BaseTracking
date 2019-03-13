@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		82003C3E223735B7001012B2 /* BaseTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 82003C3C223735B7001012B2 /* BaseTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8229A6AD2237441400CDACD4 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6AC2237441400CDACD4 /* BaseTrackingProtocol.swift */; };
-		8229A6AF223746DA00CDACD4 /* BaseTrackingArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6AE223746DA00CDACD4 /* BaseTrackingArea.swift */; };
+		820575F12238B2D700CA4C89 /* CustomRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575ED2238B2D700CA4C89 /* CustomRawRepresentable.swift */; };
+		820575F22238B2D800CA4C89 /* BaseTrackingEventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575EE2238B2D700CA4C89 /* BaseTrackingEventLog.swift */; };
+		820575F32238B2D800CA4C89 /* BaseTrackingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575EF2238B2D700CA4C89 /* BaseTrackingEvent.swift */; };
+		820575F42238B2D800CA4C89 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575F02238B2D700CA4C89 /* BaseTrackingProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82003C39223735B7001012B2 /* BaseTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82003C3C223735B7001012B2 /* BaseTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTracking.h; sourceTree = "<group>"; };
 		82003C3D223735B7001012B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8229A6AC2237441400CDACD4 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
-		8229A6AE223746DA00CDACD4 /* BaseTrackingArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTrackingArea.swift; sourceTree = "<group>"; };
+		820575ED2238B2D700CA4C89 /* CustomRawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRawRepresentable.swift; sourceTree = "<group>"; };
+		820575EE2238B2D700CA4C89 /* BaseTrackingEventLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEventLog.swift; sourceTree = "<group>"; };
+		820575EF2238B2D700CA4C89 /* BaseTrackingEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEvent.swift; sourceTree = "<group>"; };
+		820575F02238B2D700CA4C89 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,16 +56,18 @@
 			children = (
 				82003C3C223735B7001012B2 /* BaseTracking.h */,
 				82003C3D223735B7001012B2 /* Info.plist */,
-				8229A6AB22373DAF00CDACD4 /* Source */,
+				820575EC2238B2D700CA4C89 /* Source */,
 			);
 			path = BaseTracking;
 			sourceTree = "<group>";
 		};
-		8229A6AB22373DAF00CDACD4 /* Source */ = {
+		820575EC2238B2D700CA4C89 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8229A6AC2237441400CDACD4 /* BaseTrackingProtocol.swift */,
-				8229A6AE223746DA00CDACD4 /* BaseTrackingArea.swift */,
+				820575ED2238B2D700CA4C89 /* CustomRawRepresentable.swift */,
+				820575EE2238B2D700CA4C89 /* BaseTrackingEventLog.swift */,
+				820575EF2238B2D700CA4C89 /* BaseTrackingEvent.swift */,
+				820575F02238B2D700CA4C89 /* BaseTrackingProtocol.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -145,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8229A6AF223746DA00CDACD4 /* BaseTrackingArea.swift in Sources */,
-				8229A6AD2237441400CDACD4 /* BaseTrackingProtocol.swift in Sources */,
+				820575F12238B2D700CA4C89 /* CustomRawRepresentable.swift in Sources */,
+				820575F42238B2D800CA4C89 /* BaseTrackingProtocol.swift in Sources */,
+				820575F22238B2D800CA4C89 /* BaseTrackingEventLog.swift in Sources */,
+				820575F32238B2D800CA4C89 /* BaseTrackingEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

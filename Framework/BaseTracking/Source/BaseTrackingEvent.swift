@@ -22,7 +22,7 @@
 
 import Foundation
 
-public protocol BaseTrackingArea: AnyObject {
+public protocol BaseTrackingEvent: AnyObject {
   associatedtype ScreenView: RawRepresentable
   associatedtype EventCategory: RawRepresentable
   associatedtype EventAction: RawRepresentable
@@ -30,16 +30,4 @@ public protocol BaseTrackingArea: AnyObject {
 
   static func trackView(name: ScreenView)
   static func trackEvent(category: EventCategory, action: EventAction, label: EventLabel?, value: NSNumber?)
-}
-
-public struct CustomRawRepresentable: RawRepresentable {
-  private var value: String
-
-  public init?(rawValue: String) {
-    self.value = rawValue
-  }
-
-  public var rawValue: String {
-    return self.value
-  }
 }

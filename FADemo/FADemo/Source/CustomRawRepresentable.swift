@@ -22,18 +22,14 @@
 
 import Foundation
 
-public typealias BaseTrackingEventData = (category: String?, action: String?, label: String?, value: NSNumber?)
-public typealias BaseTrackingEventLogData = (name: String, parameters: [String: Any]?)
-public typealias BaseTrackingViewData = (name: String, className: String?)
+public struct CustomRawRepresentable: RawRepresentable {
+  private var value: Any
 
-public protocol BaseTrackingProtocol: AnyObject {
-  func configure()
-  func track(event data: BaseTrackingEventData)
-  func track(event log: BaseTrackingEventLogData)
-  func track(view data: BaseTrackingViewData)
-}
+  public init?(rawValue: Any) {
+    self.value = rawValue
+  }
 
-extension BaseTrackingProtocol {
-  func track(event data: BaseTrackingEventData) {}
-  func track(event log: BaseTrackingEventLogData) {}
+  public var rawValue: Any {
+    return self.value
+  }
 }

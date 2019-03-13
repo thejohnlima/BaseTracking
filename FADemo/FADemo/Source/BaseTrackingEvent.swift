@@ -22,10 +22,12 @@
 
 import Foundation
 
-public typealias BaseTrackingEventAction = (category: String?, action: String?, label: String?, value: NSNumber?)
+public protocol BaseTrackingEvent: AnyObject {
+  associatedtype ScreenView: RawRepresentable
+  associatedtype EventCategory: RawRepresentable
+  associatedtype EventAction: RawRepresentable
+  associatedtype EventLabel: RawRepresentable
 
-public protocol BaseTrackingProtocol: AnyObject {
-  func configure()
-  func track(event action: BaseTrackingEventAction)
-  func track(view name: String)
+  static func trackView(name: ScreenView)
+  static func trackEvent(category: EventCategory, action: EventAction, label: EventLabel?, value: NSNumber?)
 }
