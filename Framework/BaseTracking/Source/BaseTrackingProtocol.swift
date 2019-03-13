@@ -26,7 +26,7 @@ public typealias BaseTrackingEventData = (category: String?, action: String?, la
 public typealias BaseTrackingEventLogData = (name: String, parameters: [String: Any]?)
 public typealias BaseTrackingViewData = (name: String, className: String?)
 
-public protocol BaseTrackingProtocol: AnyObject {
+public protocol BaseTrackingProtocol {
   func configure()
   func track(event data: BaseTrackingEventData)
   func track(event log: BaseTrackingEventLogData)

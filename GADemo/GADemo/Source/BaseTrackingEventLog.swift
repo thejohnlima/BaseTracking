@@ -22,12 +22,12 @@
 
 import Foundation
 
-public protocol BaseTrackingEvent {
-  associatedtype ScreenView: RawRepresentable
-  associatedtype EventCategory: RawRepresentable
-  associatedtype EventAction: RawRepresentable
-  associatedtype EventLabel: RawRepresentable
+public protocol BaseTrackingEventLog {
+  associatedtype ScreenName: RawRepresentable
+  associatedtype ClassName: RawRepresentable
+  associatedtype EventName: RawRepresentable
+  associatedtype EventParameters: RawRepresentable
 
-  static func trackView(name: ScreenView)
-  static func trackEvent(category: EventCategory, action: EventAction, label: EventLabel?, value: NSNumber?)
+  static func trackView(name: ScreenName, className: ClassName?)
+  static func trackEvent(name: EventName, parameters: EventParameters?)
 }
