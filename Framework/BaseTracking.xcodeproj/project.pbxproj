@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		82003C3E223735B7001012B2 /* BaseTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 82003C3C223735B7001012B2 /* BaseTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		820575F12238B2D700CA4C89 /* CustomRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575ED2238B2D700CA4C89 /* CustomRawRepresentable.swift */; };
+		820575F22238B2D800CA4C89 /* BaseTrackingEventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575EE2238B2D700CA4C89 /* BaseTrackingEventLog.swift */; };
+		820575F32238B2D800CA4C89 /* BaseTrackingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575EF2238B2D700CA4C89 /* BaseTrackingEvent.swift */; };
+		820575F42238B2D800CA4C89 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820575F02238B2D700CA4C89 /* BaseTrackingProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82003C39223735B7001012B2 /* BaseTracking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseTracking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82003C3C223735B7001012B2 /* BaseTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTracking.h; sourceTree = "<group>"; };
 		82003C3D223735B7001012B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		820575ED2238B2D700CA4C89 /* CustomRawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRawRepresentable.swift; sourceTree = "<group>"; };
+		820575EE2238B2D700CA4C89 /* BaseTrackingEventLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEventLog.swift; sourceTree = "<group>"; };
+		820575EF2238B2D700CA4C89 /* BaseTrackingEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEvent.swift; sourceTree = "<group>"; };
+		820575F02238B2D700CA4C89 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +56,20 @@
 			children = (
 				82003C3C223735B7001012B2 /* BaseTracking.h */,
 				82003C3D223735B7001012B2 /* Info.plist */,
+				820575EC2238B2D700CA4C89 /* Source */,
 			);
 			path = BaseTracking;
+			sourceTree = "<group>";
+		};
+		820575EC2238B2D700CA4C89 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				820575ED2238B2D700CA4C89 /* CustomRawRepresentable.swift */,
+				820575EE2238B2D700CA4C89 /* BaseTrackingEventLog.swift */,
+				820575EF2238B2D700CA4C89 /* BaseTrackingEvent.swift */,
+				820575F02238B2D700CA4C89 /* BaseTrackingProtocol.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +115,7 @@
 				TargetAttributes = {
 					82003C38223735B7001012B2 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820575F12238B2D700CA4C89 /* CustomRawRepresentable.swift in Sources */,
+				820575F42238B2D800CA4C89 /* BaseTrackingProtocol.swift in Sources */,
+				820575F22238B2D800CA4C89 /* BaseTrackingEventLog.swift in Sources */,
+				820575F32238B2D800CA4C89 /* BaseTrackingEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +286,7 @@
 		82003C42223735B7001012B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +303,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.BaseTracking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +312,7 @@
 		82003C43223735B7001012B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
