@@ -1,5 +1,6 @@
 # BaseTracking
 
+[![GitHub release](https://img.shields.io/github/release/limadeveloper/BaseTracking.svg)](https://github.com/limadeveloper/BaseTracking/releases)
 [![Build Status](https://travis-ci.com/limadeveloper/BaseTracking.svg?branch=master)](https://travis-ci.com/limadeveloper/BaseTracking)
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/BaseTracking)
 [![License](https://img.shields.io/github/license/limadeveloper/BaseTracking.svg)](https://raw.githubusercontent.com/limadeveloper/BaseTracking/master/LICENSE)
