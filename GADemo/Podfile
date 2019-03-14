@@ -6,5 +6,6 @@ target 'GADemo' do
 
   # Pods for GADemo
   pod 'GoogleAnalytics', '~> 3.17'
+  pod 'BaseTracking', :git => 'https://github.com/limadeveloper/BaseTracking.git', :branch => 'master'
 
 end

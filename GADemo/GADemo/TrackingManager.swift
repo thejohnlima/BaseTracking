@@ -10,6 +10,7 @@
 //  **********************************
 
 import Foundation
+import BaseTracking
 
 final class TrackingManager {
   
