@@ -11,6 +11,7 @@
 
 import Foundation
 import Firebase
+import BaseTracking
 
 final class TrackingManager {
 
