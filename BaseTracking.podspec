@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version            = "1.0.0"
   s.summary            = "BaseTracking is the easiest way to setup your analytics in Swift"
   s.requires_arc       = true
-  s.homepage           = "https://github.com/limadeveloper/iOS-BaseTracking"
+  s.homepage           = "https://github.com/limadeveloper/BaseTracking"
   s.license            = "MIT"
   s.author             = { "John Lima" => "john.limadeveloper@gmail.com" }
   s.social_media_url   = "https://twitter.com/johncarloslima"
