@@ -1,0 +1,10 @@
+platform :ios, '9.3'
+
+target 'GADemo' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for GADemo
+  pod 'GoogleAnalytics', '~> 3.17'
+
+end
