@@ -14,10 +14,6 @@
 		8229A6C62237516B00CDACD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C52237516B00CDACD4 /* Assets.xcassets */; };
 		8229A6C92237516B00CDACD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */; };
 		8229A6D1223751FE00CDACD4 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D0223751FE00CDACD4 /* TrackingManager.swift */; };
-		8229A6D52237524700CDACD4 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D32237524700CDACD4 /* BaseTrackingProtocol.swift */; };
-		8229A6D62237524700CDACD4 /* BaseTrackingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D42237524700CDACD4 /* BaseTrackingEvent.swift */; };
-		822D622222389B8F0024009B /* BaseTrackingEventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D622122389B8F0024009B /* BaseTrackingEventLog.swift */; };
-		822D622422389BBB0024009B /* CustomRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D622322389BBB0024009B /* CustomRawRepresentable.swift */; };
 		822D622F2238A28E0024009B /* HomeTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D622E2238A28E0024009B /* HomeTracking.swift */; };
 		872E1A5BFA2013DBE19192DE /* Pods_FADemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E0ADFDE486E5418CF6232C /* Pods_FADemo.framework */; };
 /* End PBXBuildFile section */
@@ -33,10 +29,6 @@
 		8229A6C82237516B00CDACD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8229A6CA2237516B00CDACD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8229A6D0223751FE00CDACD4 /* TrackingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingManager.swift; sourceTree = "<group>"; };
-		8229A6D32237524700CDACD4 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
-		8229A6D42237524700CDACD4 /* BaseTrackingEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEvent.swift; sourceTree = "<group>"; };
-		822D622122389B8F0024009B /* BaseTrackingEventLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTrackingEventLog.swift; sourceTree = "<group>"; };
-		822D622322389BBB0024009B /* CustomRawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRawRepresentable.swift; sourceTree = "<group>"; };
 		822D622E2238A28E0024009B /* HomeTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTracking.swift; sourceTree = "<group>"; };
 		C8E0ADFDE486E5418CF6232C /* Pods_FADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FADemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6355973899F853E504FF143 /* Pods-FADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FADemo.release.xcconfig"; path = "Target Support Files/Pods-FADemo/Pods-FADemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,20 +93,8 @@
 				8229A6CA2237516B00CDACD4 /* Info.plist */,
 				527044312238177700421F66 /* GoogleService-Info.plist */,
 				8229A6C52237516B00CDACD4 /* Assets.xcassets */,
-				8229A6D22237524700CDACD4 /* Source */,
 			);
 			path = FADemo;
-			sourceTree = "<group>";
-		};
-		8229A6D22237524700CDACD4 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				8229A6D32237524700CDACD4 /* BaseTrackingProtocol.swift */,
-				8229A6D42237524700CDACD4 /* BaseTrackingEvent.swift */,
-				822D622122389B8F0024009B /* BaseTrackingEventLog.swift */,
-				822D622322389BBB0024009B /* CustomRawRepresentable.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +199,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FADemo/Pods-FADemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BaseTracking/BaseTracking.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -226,6 +207,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BaseTracking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -243,12 +225,8 @@
 			files = (
 				8229A6D1223751FE00CDACD4 /* TrackingManager.swift in Sources */,
 				822D622F2238A28E0024009B /* HomeTracking.swift in Sources */,
-				822D622222389B8F0024009B /* BaseTrackingEventLog.swift in Sources */,
-				8229A6D52237524700CDACD4 /* BaseTrackingProtocol.swift in Sources */,
 				8229A6C12237516900CDACD4 /* HomeViewController.swift in Sources */,
 				8229A6BF2237516900CDACD4 /* AppDelegate.swift in Sources */,
-				822D622422389BBB0024009B /* CustomRawRepresentable.swift in Sources */,
-				8229A6D62237524700CDACD4 /* BaseTrackingEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

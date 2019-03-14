@@ -1,4 +1,5 @@
 PODS:
+  - BaseTracking (1.0.0)
   - Firebase/Core (5.18.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.7.0)
@@ -50,10 +51,12 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - BaseTracking (~> 1.0)
   - Firebase/Core
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - BaseTracking
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -63,6 +66,7 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+  BaseTracking: b9891022ec029b16109ef63ec5c9ebb4379717b3
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseCore: 52f851b30e11360f1e67cf04b1edfebf0a47a2d3
@@ -71,6 +75,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: aa6dcab9405da4d501c9a6e8a98456b350e05fc6
+PODFILE CHECKSUM: a5e2b59271076398640bd27b7a25d0c9b3415a8e
 
 COCOAPODS: 1.6.1

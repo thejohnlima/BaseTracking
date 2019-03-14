@@ -6,5 +6,6 @@ target 'FADemo' do
 
   # Pods for FADemo
   pod 'Firebase/Core'
+  pod 'BaseTracking', :git => 'https://github.com/limadeveloper/BaseTracking.git', :branch => 'master'
 
 end

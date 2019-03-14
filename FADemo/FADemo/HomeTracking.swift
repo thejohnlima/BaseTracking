@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import BaseTracking
 
 struct HomeTracking: BaseTrackingEventLog {
   enum ScreenName: String {

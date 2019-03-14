@@ -33,7 +33,7 @@ public protocol BaseTrackingProtocol {
   func track(view data: BaseTrackingViewData)
 }
 
-extension BaseTrackingProtocol {
+public extension BaseTrackingProtocol {
   func track(event data: BaseTrackingEventData) {}
   func track(event log: BaseTrackingEventLogData) {}
 }
