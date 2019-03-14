@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		528D7E842239AADD00202F68 /* CustomRawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7E802239AADD00202F68 /* CustomRawRepresentable.swift */; };
-		528D7E852239AADD00202F68 /* BaseTrackingEventLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7E812239AADD00202F68 /* BaseTrackingEventLog.swift */; };
-		528D7E862239AADD00202F68 /* BaseTrackingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7E822239AADD00202F68 /* BaseTrackingEvent.swift */; };
-		528D7E872239AADD00202F68 /* BaseTrackingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7E832239AADD00202F68 /* BaseTrackingProtocol.swift */; };
 		528D7E892239AB7A00202F68 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7E882239AB7A00202F68 /* TrackingManager.swift */; };
 		528D7E8C2239B54F00202F68 /* HomeTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528D7E8B2239B54F00202F68 /* HomeTracking.swift */; };
 		52AB664A2239A828006D4A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB66492239A828006D4A92 /* AppDelegate.swift */; };
@@ -22,10 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		528D7E802239AADD00202F68 /* CustomRawRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRawRepresentable.swift; sourceTree = "<group>"; };
-		528D7E812239AADD00202F68 /* BaseTrackingEventLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEventLog.swift; sourceTree = "<group>"; };
-		528D7E822239AADD00202F68 /* BaseTrackingEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingEvent.swift; sourceTree = "<group>"; };
-		528D7E832239AADD00202F68 /* BaseTrackingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTrackingProtocol.swift; sourceTree = "<group>"; };
 		528D7E882239AB7A00202F68 /* TrackingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingManager.swift; sourceTree = "<group>"; };
 		528D7E8A2239ADF200202F68 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		528D7E8B2239B54F00202F68 /* HomeTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTracking.swift; sourceTree = "<group>"; };
@@ -53,17 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		528D7E7F2239AADD00202F68 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				528D7E802239AADD00202F68 /* CustomRawRepresentable.swift */,
-				528D7E812239AADD00202F68 /* BaseTrackingEventLog.swift */,
-				528D7E822239AADD00202F68 /* BaseTrackingEvent.swift */,
-				528D7E832239AADD00202F68 /* BaseTrackingProtocol.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		52AB663D2239A827006D4A92 = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +75,6 @@
 				52AB66522239A829006D4A92 /* LaunchScreen.storyboard */,
 				52AB66552239A829006D4A92 /* Info.plist */,
 				52AB66502239A829006D4A92 /* Assets.xcassets */,
-				528D7E7F2239AADD00202F68 /* Source */,
 			);
 			path = GADemo;
 			sourceTree = "<group>";
@@ -127,6 +107,7 @@
 				52AB66422239A827006D4A92 /* Sources */,
 				52AB66432239A827006D4A92 /* Frameworks */,
 				52AB66442239A827006D4A92 /* Resources */,
+				F77A4BACAB7613329D17F6F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +130,7 @@
 				TargetAttributes = {
 					52AB66452239A827006D4A92 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -206,6 +188,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F77A4BACAB7613329D17F6F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GADemo/Pods-GADemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BaseTracking/BaseTracking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BaseTracking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GADemo/Pods-GADemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -215,12 +219,8 @@
 			files = (
 				52AB664C2239A828006D4A92 /* HomeViewController.swift in Sources */,
 				528D7E8C2239B54F00202F68 /* HomeTracking.swift in Sources */,
-				528D7E872239AADD00202F68 /* BaseTrackingProtocol.swift in Sources */,
 				528D7E892239AB7A00202F68 /* TrackingManager.swift in Sources */,
 				52AB664A2239A828006D4A92 /* AppDelegate.swift in Sources */,
-				528D7E862239AADD00202F68 /* BaseTrackingEvent.swift in Sources */,
-				528D7E842239AADD00202F68 /* CustomRawRepresentable.swift in Sources */,
-				528D7E852239AADD00202F68 /* BaseTrackingEventLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +375,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/john/Downloads/BaseTracking/GADemo/GADemo/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/limadeveloper/Documents/JOHN/Developer/Projects/iOS/Frameworks/BaseTracking/GADemo/GADemo/BridgingHeader.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,7 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/john/Downloads/BaseTracking/GADemo/GADemo/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/limadeveloper/Documents/JOHN/Developer/Projects/iOS/Frameworks/BaseTracking/GADemo/GADemo/BridgingHeader.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
