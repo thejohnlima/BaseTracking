@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "John Lima" => "john.limadeveloper@gmail.com" }
   s.social_media_url   = "https://twitter.com/johncarloslima"
   s.platform           = :ios, "9.3"
-  s.source             = { :git => "", :tag => "#{s.version}" }
+  s.source             = { :git => "https://github.com/limadeveloper/BaseTracking.git", :tag => "#{s.version}" }
   s.source_files       = "Framework/BaseTracking/Source/*.{swift}"
   s.swift_version      = "4.0"
 end
