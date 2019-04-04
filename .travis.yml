@@ -4,5 +4,5 @@ before_install:
 - set -o pipefail
 - xcrun simctl boot "iPhone XR" || echo "(Pre)Launched the simulator."
 script:
-- pod lib lint
-- pod spec lint
+- pod lib lint --allow-warnings
+- pod spec lint --allow-warnings
