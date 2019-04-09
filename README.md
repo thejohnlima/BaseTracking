@@ -5,6 +5,7 @@
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/BaseTracking)
 [![GitHub repo size](https://img.shields.io/github/repo-size/limadeveloper/BaseTracking.svg)](https://github.com/limadeveloper/BaseTracking)
 [![License](https://img.shields.io/github/license/limadeveloper/BaseTracking.svg)](https://raw.githubusercontent.com/limadeveloper/BaseTracking/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/BaseTracking.svg?style=flat)](https://developer.apple.com/ios/)
 
 **BaseTracking** is the easiest way to setup your analytics in Swift.
 
