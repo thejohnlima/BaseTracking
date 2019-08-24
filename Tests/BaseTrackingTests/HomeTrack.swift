@@ -20,33 +20,43 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import XCTest
-@testable import BaseTracking
+@testable
+import BaseTracking
 
-final class BaseTrackingTests: XCTestCase {
+struct HomeTrack {}
 
-  // MARK: - Properties
-  private var manager: TrackManager?
-
-  static var allTests = [
-    ("testSetupSuccess", testSetupSuccess),
-  ]
-
-  // MARK: - Overrides
-  override func setUp() {
-    super.setUp()
-    manager = TrackManager.shared
-    manager?.configure()
+extension HomeTrack: BaseTrackingEvent {
+  enum ScreenView: String {
+    case home = "screen name to send"
   }
 
-  override func tearDown() {
-    manager = nil
-    super.tearDown()
+  enum EventCategory: String {
+    case category = "category name to send"
   }
 
-  // MARK: - Test Methods
-  func testSetupSuccess() {
-    XCTAssertEqual(manager?.mock.gaSetup, true)
-    XCTAssertEqual(manager?.mock.firebaseSetup, true)
+  enum EventAction: String {
+    case tapButton = "action name to send"
+  }
+
+  enum EventLabel: String {
+    case label = "label description to send"
+  }
+}
+
+extension HomeTrack: BaseTrackingEventLog {
+  enum ScreenName: String {
+    case home = "screen name to send"
+  }
+
+  enum ClassName: String {
+    case home = "class name to send"
+  }
+
+  enum EventName: String {
+    case home = "event name to send"
+  }
+
+  enum EventParameters: String {
+    case home = "event parameters to send"
   }
 }
