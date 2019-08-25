@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -126,7 +126,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "John Lima";
+				ORGANIZATIONNAME = thejohnlima;
 				TargetAttributes = {
 					52AB66452239A827006D4A92 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,16 +194,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GADemo/Pods-GADemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BaseTracking/BaseTracking.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GADemo/Pods-GADemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BaseTracking.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-GADemo/Pods-GADemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,9 +368,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/limadeveloper/Documents/JOHN/Developer/Projects/iOS/Frameworks/BaseTracking/GADemo/GADemo/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = GADemo/BridgingHeader.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,9 +387,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/limadeveloper/Documents/JOHN/Developer/Projects/iOS/Frameworks/BaseTracking/GADemo/GADemo/BridgingHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = GADemo/BridgingHeader.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
