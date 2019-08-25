@@ -27,6 +27,7 @@ final class BaseTrackingTests: XCTestCase {
 
   // MARK: - Properties
   private var manager: TrackManager?
+  private var controller: HomeController?
 
   static var allTests = [
     ("testSetupSuccess", testSetupSuccess),
@@ -37,10 +38,13 @@ final class BaseTrackingTests: XCTestCase {
     super.setUp()
     manager = TrackManager.shared
     manager?.configure()
+
+    controller = HomeController()
   }
 
   override func tearDown() {
     manager = nil
+    controller = nil
     super.tearDown()
   }
 
@@ -48,5 +52,22 @@ final class BaseTrackingTests: XCTestCase {
   func testSetupSuccess() {
     XCTAssertEqual(manager?.mock.gaSetup, true)
     XCTAssertEqual(manager?.mock.firebaseSetup, true)
+  }
+
+  func testTrackView() {
+    _ = controller?.view
+    XCTAssertEqual(manager?.mock.trackViewData?.name, "screen name to send")
+  }
+
+  func testTrackEventData() {
+    controller?.primaryButtonTapped()
+    XCTAssertEqual(manager?.mock.trackEventData?.category, "category name to send")
+    XCTAssertEqual(manager?.mock.trackEventData?.action, "action name to send")
+    XCTAssertEqual(manager?.mock.trackEventData?.label, "label description to send")
+  }
+
+  func testTrackEventLog() {
+    controller?.secondaryButtonTapped()
+    XCTAssertEqual(manager?.mock.trackEventLog?.name, "event name to send")
   }
 }

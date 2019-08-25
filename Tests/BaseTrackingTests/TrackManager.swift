@@ -132,7 +132,7 @@ extension BaseTrackingEvent {
   }
 
   static func trackEvent(category: EventCategory, action: EventAction, label: EventLabel? = nil, value: NSNumber? = nil) {
-    let data = (
+    let data: BaseTrackingEventData = (
       category: category.rawValue as? String,
       action: action.rawValue as? String,
       label: label?.rawValue as? String,
