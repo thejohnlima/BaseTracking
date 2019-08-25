@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		527044322238177700421F66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 527044312238177700421F66 /* GoogleService-Info.plist */; };
+		1BB1DE952312D6B60080F4E4 /* BaseTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 1BB1DE942312D6B60080F4E4 /* BaseTracking */; };
+		1BB1DE972312D91C0080F4E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BB1DE962312D91C0080F4E4 /* GoogleService-Info.plist */; };
 		8229A6BF2237516900CDACD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6BE2237516900CDACD4 /* AppDelegate.swift */; };
 		8229A6C12237516900CDACD4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6C02237516900CDACD4 /* HomeViewController.swift */; };
 		8229A6C42237516900CDACD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C22237516900CDACD4 /* Main.storyboard */; };
@@ -15,12 +16,12 @@
 		8229A6C92237516B00CDACD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */; };
 		8229A6D1223751FE00CDACD4 /* TrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6D0223751FE00CDACD4 /* TrackingManager.swift */; };
 		822D622F2238A28E0024009B /* HomeTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D622E2238A28E0024009B /* HomeTracking.swift */; };
-		872E1A5BFA2013DBE19192DE /* Pods_FADemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E0ADFDE486E5418CF6232C /* Pods_FADemo.framework */; };
+		BD38A1A8E31FAD76B488E05A /* Pods_FADemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5B6531F92698BEFA208F61 /* Pods_FADemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		527044312238177700421F66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7D5C3A261D31A0ED8EEF75F5 /* Pods-FADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FADemo.debug.xcconfig"; path = "Target Support Files/Pods-FADemo/Pods-FADemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1BB1DE962312D91C0080F4E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		339E9680E7D37E0C10AD6038 /* Pods-FADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FADemo.release.xcconfig"; path = "Target Support Files/Pods-FADemo/Pods-FADemo.release.xcconfig"; sourceTree = "<group>"; };
 		8229A6BB2237516900CDACD4 /* FADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8229A6BE2237516900CDACD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8229A6C02237516900CDACD4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +31,8 @@
 		8229A6CA2237516B00CDACD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8229A6D0223751FE00CDACD4 /* TrackingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingManager.swift; sourceTree = "<group>"; };
 		822D622E2238A28E0024009B /* HomeTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTracking.swift; sourceTree = "<group>"; };
-		C8E0ADFDE486E5418CF6232C /* Pods_FADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FADemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6355973899F853E504FF143 /* Pods-FADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FADemo.release.xcconfig"; path = "Target Support Files/Pods-FADemo/Pods-FADemo.release.xcconfig"; sourceTree = "<group>"; };
+		897340531D2AE23C38D985F7 /* Pods-FADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FADemo.debug.xcconfig"; path = "Target Support Files/Pods-FADemo/Pods-FADemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB5B6531F92698BEFA208F61 /* Pods_FADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FADemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,37 +40,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				872E1A5BFA2013DBE19192DE /* Pods_FADemo.framework in Frameworks */,
+				1BB1DE952312D6B60080F4E4 /* BaseTracking in Frameworks */,
+				BD38A1A8E31FAD76B488E05A /* Pods_FADemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C49E7D3BC40AE9702B8AF0D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7D5C3A261D31A0ED8EEF75F5 /* Pods-FADemo.debug.xcconfig */,
-				D6355973899F853E504FF143 /* Pods-FADemo.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		7B2C86DAFBC6EE14DC3EE7B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C8E0ADFDE486E5418CF6232C /* Pods_FADemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8229A6B22237516900CDACD4 = {
 			isa = PBXGroup;
 			children = (
 				8229A6BD2237516900CDACD4 /* FADemo */,
 				8229A6BC2237516900CDACD4 /* Products */,
-				3C49E7D3BC40AE9702B8AF0D /* Pods */,
-				7B2C86DAFBC6EE14DC3EE7B9 /* Frameworks */,
+				9F9E6EA3E73B5745855BEB83 /* Pods */,
+				D65A51E06DB66B044B18EF99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,10 +76,27 @@
 				8229A6C22237516900CDACD4 /* Main.storyboard */,
 				8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */,
 				8229A6CA2237516B00CDACD4 /* Info.plist */,
-				527044312238177700421F66 /* GoogleService-Info.plist */,
+				1BB1DE962312D91C0080F4E4 /* GoogleService-Info.plist */,
 				8229A6C52237516B00CDACD4 /* Assets.xcassets */,
 			);
 			path = FADemo;
+			sourceTree = "<group>";
+		};
+		9F9E6EA3E73B5745855BEB83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				897340531D2AE23C38D985F7 /* Pods-FADemo.debug.xcconfig */,
+				339E9680E7D37E0C10AD6038 /* Pods-FADemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D65A51E06DB66B044B18EF99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB5B6531F92698BEFA208F61 /* Pods_FADemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,17 +106,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8229A6CD2237516B00CDACD4 /* Build configuration list for PBXNativeTarget "FADemo" */;
 			buildPhases = (
-				365729660BBBC139FD27A790 /* [CP] Check Pods Manifest.lock */,
+				3E7034DB652C982F53D86575 /* [CP] Check Pods Manifest.lock */,
 				8229A6B72237516900CDACD4 /* Sources */,
 				8229A6B82237516900CDACD4 /* Frameworks */,
 				8229A6B92237516900CDACD4 /* Resources */,
-				72DECD7B9CEE8576E3729D81 /* [CP] Embed Pods Frameworks */,
+				912149859AC2F3BC1DD91CE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FADemo;
+			packageProductDependencies = (
+				1BB1DE942312D6B60080F4E4 /* BaseTracking */,
+			);
 			productName = FADemo;
 			productReference = 8229A6BB2237516900CDACD4 /* FADemo.app */;
 			productType = "com.apple.product-type.application";
@@ -127,7 +132,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = limadeveloper;
+				ORGANIZATIONNAME = thejohnlima;
 				TargetAttributes = {
 					8229A6BA2237516900CDACD4 = {
 						CreatedOnToolsVersion = 10.2;
@@ -144,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 8229A6B22237516900CDACD4;
+			packageReferences = (
+				1BB1DE932312D6B60080F4E4 /* XCRemoteSwiftPackageReference "BaseTracking" */,
+			);
 			productRefGroup = 8229A6BC2237516900CDACD4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8229A6C92237516B00CDACD4 /* LaunchScreen.storyboard in Resources */,
-				527044322238177700421F66 /* GoogleService-Info.plist in Resources */,
+				1BB1DE972312D91C0080F4E4 /* GoogleService-Info.plist in Resources */,
 				8229A6C62237516B00CDACD4 /* Assets.xcassets in Resources */,
 				8229A6C42237516900CDACD4 /* Main.storyboard in Resources */,
 			);
@@ -168,7 +176,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		365729660BBBC139FD27A790 /* [CP] Check Pods Manifest.lock */ = {
+		3E7034DB652C982F53D86575 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,26 +198,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		72DECD7B9CEE8576E3729D81 /* [CP] Embed Pods Frameworks */ = {
+		912149859AC2F3BC1DD91CE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FADemo/Pods-FADemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BaseTracking/BaseTracking.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FADemo/Pods-FADemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BaseTracking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-FADemo/Pods-FADemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,7 +369,7 @@
 		};
 		8229A6CE2237516B00CDACD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D5C3A261D31A0ED8EEF75F5 /* Pods-FADemo.debug.xcconfig */;
+			baseConfigurationReference = 897340531D2AE23C38D985F7 /* Pods-FADemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,7 +387,7 @@
 		};
 		8229A6CF2237516B00CDACD4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6355973899F853E504FF143 /* Pods-FADemo.release.xcconfig */;
+			baseConfigurationReference = 339E9680E7D37E0C10AD6038 /* Pods-FADemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1BB1DE932312D6B60080F4E4 /* XCRemoteSwiftPackageReference "BaseTracking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/limadeveloper/BaseTracking.git";
+			requirement = {
+				branch = feature/spm_support;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1BB1DE942312D6B60080F4E4 /* BaseTracking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1BB1DE932312D6B60080F4E4 /* XCRemoteSwiftPackageReference "BaseTracking" */;
+			productName = BaseTracking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8229A6B32237516900CDACD4 /* Project object */;
 }

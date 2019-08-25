@@ -1,5 +1,4 @@
 PODS:
-  - BaseTracking (1.0.0)
   - Firebase/Core (5.18.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.7.0)
@@ -51,7 +50,6 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
-  - BaseTracking (from `https://github.com/limadeveloper/BaseTracking.git`, branch `master`)
   - Firebase/Core
 
 SPEC REPOS:
@@ -64,18 +62,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
 
-EXTERNAL SOURCES:
-  BaseTracking:
-    :branch: master
-    :git: https://github.com/limadeveloper/BaseTracking.git
-
-CHECKOUT OPTIONS:
-  BaseTracking:
-    :commit: c17661138380e931536363a4639deb43d438dbdf
-    :git: https://github.com/limadeveloper/BaseTracking.git
-
 SPEC CHECKSUMS:
-  BaseTracking: b9891022ec029b16109ef63ec5c9ebb4379717b3
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
   FirebaseAnalytics: 23851fe602c872130a2c5c55040b302120346cc2
   FirebaseCore: 52f851b30e11360f1e67cf04b1edfebf0a47a2d3
@@ -84,6 +71,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 0f5cfa852cbf93da4d36f1f663d5193c43e48ab6
+PODFILE CHECKSUM: aa6dcab9405da4d501c9a6e8a98456b350e05fc6
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5

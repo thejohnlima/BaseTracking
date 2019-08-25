@@ -9,12 +9,23 @@
 
 **BaseTracking** is the easiest way to setup your analytics in Swift.
 
-## Requirements
+## ❗️Requirements
 
 - iOS 9.3+
-- Swift 4.0+
+- Swift 5.0+
 
-## Installation
+## ⚒ Installation
+
+### Swift Package Manager
+
+**BaseTracking** is available through [SPM](https://developer.apple.com/videos/play/wwdc2019/408/). To install
+it, follow the steps:
+
+```script
+Open Xcode project > File > Swift Packages > Add Package Dependecy
+```
+
+After that, put the url in the field: `https://github.com/limadeveloper/BaseTracking.git`
 
 ### CocoaPods
 
@@ -22,20 +33,12 @@
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'BaseTracking', '~> 1.0'
+pod 'BaseTracking'
 ```
 
 and run `pod install`
 
-### Manual
-
-Just copy source folder to your project.
-
-```script
-Framework > BaseTracking > Source
-```
-
-## How to use
+## 🎓 How to use
 
 **Example using Firebase Analytics:**
 
@@ -132,14 +135,14 @@ class HomeViewController: UIViewController {
 }
 ```
 
-If you need examples unsing GA, take a look at [`demo project`](https://github.com/limadeveloper/BaseTracking/tree/master/GADemo).
+If you need examples unsing GA, take a look at [`demo project`](https://github.com/limadeveloper/BaseTracking/tree/master/Examples/GADemo).
 
-## Communication
+## 🙋🏻‍ Communication
 
 - If you found a bug, open an issue.
 - If you have a feature request, open an issue.
 - If you want to contribute, submit a pull request. 👨🏻‍💻
 
-## License
+## 📜 License
 
 **BaseTracking** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/limadeveloper/BaseTracking/master/LICENSE) file for more info.
