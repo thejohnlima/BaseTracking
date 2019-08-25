@@ -20,12 +20,9 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import UIKit
+class HomeController {
 
-class HomeController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  func viewDidLoad() {
     HomeTrack.trackView(name: .home)
   }
 

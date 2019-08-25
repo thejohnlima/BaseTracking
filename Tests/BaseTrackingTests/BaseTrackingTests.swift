@@ -55,7 +55,7 @@ final class BaseTrackingTests: XCTestCase {
   }
 
   func testTrackView() {
-    _ = controller?.view
+    controller?.viewDidLoad()
     XCTAssertEqual(manager?.mock.trackViewData?.name, "screen name to send")
   }
 
