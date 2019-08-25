@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BaseTracking",
+        "repositoryURL": "https://github.com/limadeveloper/BaseTracking.git",
+        "state": {
+          "branch": "feature/spm_support",
+          "revision": "739384ce8d75be0863e121e5a5d00521b97d8076",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

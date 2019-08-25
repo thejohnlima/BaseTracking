@@ -7,6 +7,9 @@
 //
 //  **********************************
 //  Example unsing Firebase Analytics
+//
+//  Warning: Firebase require a .plist file,
+//  so don't forget to create one before setup the analytics
 //  **********************************
 
 import Foundation
@@ -14,35 +17,20 @@ import Firebase
 import BaseTracking
 
 final class TrackingManager {
-
   static let shared = TrackingManager()
-
-  private init() {}
-
-  private func configureAnalytics() {
-    FirebaseApp.configure()
-  }
-
-  private func tracking(view data: BaseTrackingViewData) {
-    Analytics.setScreenName(data.name, screenClass: data.className)
-  }
-
-  private func tracking(event: BaseTrackingEventLogData) {
-    Analytics.logEvent(event.name, parameters: event.parameters)
-  }
 }
 
 extension TrackingManager: BaseTrackingProtocol {
   func configure() {
-    configureAnalytics()
+    FirebaseApp.configure()
   }
 
   func track(event log: BaseTrackingEventLogData) {
-    tracking(event: log)
+    Analytics.logEvent(log.name, parameters: log.parameters)
   }
 
   func track(view data: BaseTrackingViewData) {
-    tracking(view: data)
+    Analytics.setScreenName(data.name, screenClass: data.className)
   }
 }
 
