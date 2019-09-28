@@ -1,10 +1,10 @@
 # BaseTracking
 
-[![GitHub release](https://img.shields.io/github/release/limadeveloper/BaseTracking.svg)](https://github.com/limadeveloper/BaseTracking/releases)
-[![Build Status](https://travis-ci.com/limadeveloper/BaseTracking.svg?branch=master)](https://travis-ci.com/limadeveloper/BaseTracking)
+[![GitHub release](https://img.shields.io/github/release/thejohnlima/BaseTracking.svg)](https://github.com/thejohnlima/BaseTracking/releases)
+[![Build Status](https://travis-ci.com/thejohnlima/BaseTracking.svg?branch=master)](https://travis-ci.com/thejohnlima/BaseTracking)
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/BaseTracking)
-[![GitHub repo size](https://img.shields.io/github/repo-size/limadeveloper/BaseTracking.svg)](https://github.com/limadeveloper/BaseTracking)
-[![License](https://img.shields.io/github/license/limadeveloper/BaseTracking.svg)](https://raw.githubusercontent.com/limadeveloper/BaseTracking/master/LICENSE)
+[![GitHub repo size](https://img.shields.io/github/repo-size/thejohnlima/BaseTracking.svg)](https://github.com/thejohnlima/BaseTracking)
+[![License](https://img.shields.io/github/license/thejohnlima/BaseTracking.svg)](https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BaseTracking.svg?style=flat)](https://developer.apple.com/ios/)
 
 **BaseTracking** is the easiest way to setup your analytics in Swift.
@@ -25,7 +25,7 @@ it, follow the steps:
 Open Xcode project > File > Swift Packages > Add Package Dependecy
 ```
 
-After that, put the url in the field: `https://github.com/limadeveloper/BaseTracking.git`
+After that, put the url in the field: `https://github.com/thejohnlima/BaseTracking.git`
 
 ### CocoaPods
 
@@ -135,7 +135,7 @@ class HomeViewController: UIViewController {
 }
 ```
 
-If you need examples unsing GA, take a look at [`demo project`](https://github.com/limadeveloper/BaseTracking/tree/master/Examples/GADemo).
+If you need examples unsing GA, take a look at [`demo project`](https://github.com/thejohnlima/BaseTracking/tree/master/Examples/GADemo).
 
 ## 🙋🏻‍ Communication
 
@@ -145,4 +145,4 @@ If you need examples unsing GA, take a look at [`demo project`](https://github.c
 
 ## 📜 License
 
-**BaseTracking** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/limadeveloper/BaseTracking/master/LICENSE) file for more info.
+**BaseTracking** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE) file for more info.
