@@ -6,6 +6,7 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/thejohnlima/BaseTracking.svg)](https://github.com/thejohnlima/BaseTracking)
 [![License](https://img.shields.io/github/license/thejohnlima/BaseTracking.svg)](https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BaseTracking.svg?style=flat)](https://developer.apple.com/ios/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/thejohnlima)
 
 **BaseTracking** is the easiest way to setup your analytics in Swift.
 
