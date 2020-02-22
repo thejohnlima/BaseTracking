@@ -1,12 +1,31 @@
-# BaseTracking
+<h1 align="center">BaseTracking</h1>
 
-[![GitHub release](https://img.shields.io/github/release/thejohnlima/BaseTracking.svg)](https://github.com/thejohnlima/BaseTracking/releases)
-[![Build Status](https://travis-ci.com/thejohnlima/BaseTracking.svg?branch=master)](https://travis-ci.com/thejohnlima/BaseTracking)
-[![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/BaseTracking)
-[![GitHub repo size](https://img.shields.io/github/repo-size/thejohnlima/BaseTracking.svg)](https://github.com/thejohnlima/BaseTracking)
-[![License](https://img.shields.io/github/license/thejohnlima/BaseTracking.svg)](https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/BaseTracking.svg?style=flat)](https://developer.apple.com/ios/)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/thejohnlima)
+<p align="center">
+ <a href="https://github.com/thejohnlima/BaseTracking/releases">
+  <img src="https://img.shields.io/github/v/release/thejohnlima/BaseTracking?style=for-the-badge">
+ </a>
+ <a href="https://github.com/thejohnlima/BaseTracking/actions">
+  <img src="https://img.shields.io/github/workflow/status/thejohnlima/BaseTracking/CI/master?style=for-the-badge">
+ </a>
+ <a href="https://cocoapods.org/pods/BaseTracking">
+  <img src="https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=for-the-badge">
+ </a><br>
+ <a href="https://github.com/thejohnlima/BaseTracking">
+  <img src="https://img.shields.io/github/repo-size/thejohnlima/BaseTracking.svg?style=for-the-badge">
+ </a>
+ <a href="https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE">
+  <img src="https://img.shields.io/github/license/thejohnlima/BaseTracking.svg?style=for-the-badge">
+ </a>
+ <a href="https://developer.apple.com/ios/">
+  <img src="https://img.shields.io/cocoapods/p/BaseTracking?style=for-the-badge">
+ </a>
+ <a href="https://developer.apple.com/swift/">
+  <img src="https://img.shields.io/badge/Swift-5-blue.svg?style=for-the-badge">
+ </a>
+ <a href="https://patreon.com/thejohnlima">
+  <img src="https://img.shields.io/badge/donate-patreon-yellow.svg?style=for-the-badge">
+ </a>
+</p>
 
 **BaseTracking** is the easiest way to setup your analytics in Swift.
 
