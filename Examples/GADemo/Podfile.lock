@@ -1,29 +1,23 @@
 PODS:
-  - BaseTracking (1.0.2)
+  - BaseTracking (1.0.3)
   - GoogleAnalytics (3.17.0)
 
 DEPENDENCIES:
-  - BaseTracking (from `https://github.com/limadeveloper/BaseTracking.git`, branch `feature/spm_support`)
+  - BaseTracking (from `../../`)
   - GoogleAnalytics
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - GoogleAnalytics
 
 EXTERNAL SOURCES:
   BaseTracking:
-    :branch: feature/spm_support
-    :git: https://github.com/limadeveloper/BaseTracking.git
-
-CHECKOUT OPTIONS:
-  BaseTracking:
-    :commit: daef28ec148252ec9b77693efaa7d51b6b6dec50
-    :git: https://github.com/limadeveloper/BaseTracking.git
+    :path: "../../"
 
 SPEC CHECKSUMS:
-  BaseTracking: 7e30ffa4a0c1ca0754f1e99947873df768758b21
+  BaseTracking: 705f48f5362e610d6ecdd4c3946a2d33ed5ba38e
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
 
-PODFILE CHECKSUM: fe8391c790d2752893e9b128045d9227f66607e5
+PODFILE CHECKSUM: a5111ef7c466a92f3157e15be81200122866369b
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.1

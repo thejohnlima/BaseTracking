@@ -3,10 +3,9 @@
 //  FADemo
 //
 //  Created by John Lima on 12/03/19.
-//  Copyright © 2019 limadeveloper. All rights reserved.
+//  Copyright © 2019 thejohnlima. All rights reserved.
 //
 
-import Foundation
 import BaseTracking
 
 struct HomeTracking: BaseTrackingEventLog {
@@ -15,7 +14,8 @@ struct HomeTracking: BaseTrackingEventLog {
   }
 
   enum EventName: String {
-    case showDetails = "show_home_details"
+    case openMenu = "home_open_menu"
+    case showDetails = "home_open_details"
   }
 
   typealias ClassName = CustomRawRepresentable
@@ -23,6 +23,10 @@ struct HomeTracking: BaseTrackingEventLog {
 }
 
 extension HomeTracking {
+
+  /// Prepare the parameters using dynamic values
+  /// - Parameter value: Dynamic value
+  /// - Returns: Event Parameters
   static func getSelectButtonParameter(_ value: Any) -> EventParameters? {
     let item: [String: Any] = ["button_name": value]
     return EventParameters(rawValue: item)

@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB1DE952312D6B60080F4E4 /* BaseTracking in Frameworks */ = {isa = PBXBuildFile; productRef = 1BB1DE942312D6B60080F4E4 /* BaseTracking */; };
 		1BB1DE972312D91C0080F4E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BB1DE962312D91C0080F4E4 /* GoogleService-Info.plist */; };
 		8229A6BF2237516900CDACD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6BE2237516900CDACD4 /* AppDelegate.swift */; };
 		8229A6C12237516900CDACD4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229A6C02237516900CDACD4 /* HomeViewController.swift */; };
@@ -40,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB1DE952312D6B60080F4E4 /* BaseTracking in Frameworks */,
 				BD38A1A8E31FAD76B488E05A /* Pods_FADemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +46,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B91199126640D4A0007051E /* AppSections */ = {
+			isa = PBXGroup;
+			children = (
+				1B91199226640D570007051E /* Home */,
+			);
+			path = AppSections;
+			sourceTree = "<group>";
+		};
+		1B91199226640D570007051E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1B91199326640D5F0007051E /* Controller */,
+				1B91199426640D790007051E /* Analytics */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1B91199326640D5F0007051E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8229A6C02237516900CDACD4 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1B91199426640D790007051E /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				822D622E2238A28E0024009B /* HomeTracking.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		1B91199526640D910007051E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1B91199626640DA00007051E /* Manager */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1B91199626640DA00007051E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8229A6D0223751FE00CDACD4 /* TrackingManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		8229A6B22237516900CDACD4 = {
 			isa = PBXGroup;
 			children = (
@@ -70,14 +117,13 @@
 			isa = PBXGroup;
 			children = (
 				8229A6BE2237516900CDACD4 /* AppDelegate.swift */,
-				8229A6C02237516900CDACD4 /* HomeViewController.swift */,
-				822D622E2238A28E0024009B /* HomeTracking.swift */,
-				8229A6D0223751FE00CDACD4 /* TrackingManager.swift */,
 				8229A6C22237516900CDACD4 /* Main.storyboard */,
 				8229A6C72237516B00CDACD4 /* LaunchScreen.storyboard */,
 				8229A6CA2237516B00CDACD4 /* Info.plist */,
 				1BB1DE962312D91C0080F4E4 /* GoogleService-Info.plist */,
 				8229A6C52237516B00CDACD4 /* Assets.xcassets */,
+				1B91199526640D910007051E /* Common */,
+				1B91199126640D4A0007051E /* AppSections */,
 			);
 			path = FADemo;
 			sourceTree = "<group>";
@@ -118,7 +164,6 @@
 			);
 			name = FADemo;
 			packageProductDependencies = (
-				1BB1DE942312D6B60080F4E4 /* BaseTracking */,
 			);
 			productName = FADemo;
 			productReference = 8229A6BB2237516900CDACD4 /* FADemo.app */;
@@ -131,7 +176,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = thejohnlima;
 				TargetAttributes = {
 					8229A6BA2237516900CDACD4 = {
@@ -150,7 +195,6 @@
 			);
 			mainGroup = 8229A6B22237516900CDACD4;
 			packageReferences = (
-				1BB1DE932312D6B60080F4E4 /* XCRemoteSwiftPackageReference "BaseTracking" */,
 			);
 			productRefGroup = 8229A6BC2237516900CDACD4 /* Products */;
 			projectDirPath = "";
@@ -277,6 +321,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -302,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -338,6 +383,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -357,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -373,7 +419,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = FADemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +439,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = FADemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,25 +475,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1BB1DE932312D6B60080F4E4 /* XCRemoteSwiftPackageReference "BaseTracking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/limadeveloper/BaseTracking.git";
-			requirement = {
-				branch = feature/spm_support;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1BB1DE942312D6B60080F4E4 /* BaseTracking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1BB1DE932312D6B60080F4E4 /* XCRemoteSwiftPackageReference "BaseTracking" */;
-			productName = BaseTracking;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8229A6B32237516900CDACD4 /* Project object */;
 }

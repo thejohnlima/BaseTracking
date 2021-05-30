@@ -22,8 +22,8 @@
  <a href="https://developer.apple.com/swift/">
   <img src="https://img.shields.io/badge/Swift-5-blue.svg?style=for-the-badge">
  </a>
- <a href="https://patreon.com/thejohnlima">
-  <img src="https://img.shields.io/badge/donate-patreon-yellow.svg?style=for-the-badge">
+ <a href="https://paypal.me/johncls">
+  <img src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge">
  </a>
 </p>
 
@@ -60,35 +60,38 @@ and run `pod install`
 
 ## 🎓 How to use
 
-**Example using Firebase Analytics:**
+**Firebase Analytics**
 
-Import library in your swift file
+`TrackingManager` file configuration :
 
-```Swift
+```swift
+import Firebase
 import BaseTracking
-```
 
-In your tracking manager file create an extension for `BaseTrackingProtocol`:
+final class TrackingManager: BaseTrackingProtocol {
+  static let shared = TrackingManager()
 
-```Swift
-extension TrackingManager: BaseTrackingProtocol {
   func configure() {
     FirebaseApp.configure()
+    FirebaseConfiguration.shared.setLoggerLevel(.warning)
   }
 
   func track(event log: BaseTrackingEventLogData) {
+    logEvent(log.name, parameters: log.parameters)
     Analytics.logEvent(log.name, parameters: log.parameters)
   }
 
   func track(view data: BaseTrackingViewData) {
+    logEvent(data.name)
     Analytics.setScreenName(data.name, screenClass: data.className)
   }
+
+  private func logEvent(_ name: String, parameters: [String : Any]? = nil) {
+    print("📊 Analytics - \(name)\n\(parameters ?? [:])")
+  }
 }
-```
 
-And create another one to prepare protocol methods
-
-```swift
+// MARK: - BaseTrackingEventLog
 extension BaseTrackingEventLog {
   static func trackView(name: ScreenName, className: ClassName? = nil) {
     let data = BaseTrackingViewData(
@@ -108,17 +111,19 @@ extension BaseTrackingEventLog {
 }
 ```
 
-Now, create a tracking file for some area of the app.  
-*Example:*
+Example for `HomeTracking` file:
 
 ```swift
+import BaseTracking
+
 struct HomeTracking: BaseTrackingEventLog {
   enum ScreenName: String {
     case home
   }
 
   enum EventName: String {
-    case showDetails = "show_home_details"
+    case openMenu = "home_open_menu"
+    case showDetails = "home_open_details"
   }
 
   typealias ClassName = CustomRawRepresentable
@@ -126,6 +131,10 @@ struct HomeTracking: BaseTrackingEventLog {
 }
 
 extension HomeTracking {
+
+  /// Prepare the parameters using dynamic values
+  /// - Parameter value: Dynamic value
+  /// - Returns: Event Parameters
   static func getSelectButtonParameter(_ value: Any) -> EventParameters? {
     let item: [String: Any] = ["button_name": value]
     return EventParameters(rawValue: item)
@@ -133,11 +142,14 @@ extension HomeTracking {
 }
 ```
 
-Than, let's get tracking some data:
+Example using a `HomeViewController`:
 
 ```swift
+import UIKit
+
 class HomeViewController: UIViewController {
 
+  // MARK: - View LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -147,7 +159,14 @@ class HomeViewController: UIViewController {
     HomeTracking.trackView(name: .home)
   }
 
-  @IBAction private func showDetails(sender: Any?) {
+  // MARK: - Actions
+  @IBAction private func openMenu(_ sender: Any?) {
+    // Example using static values
+    HomeTracking.trackEvent(name: .openMenu)
+  }
+
+  @IBAction private func showDetails(_ sender: Any?) {
+    // Example using dynamic values
     let buttonName = (sender as? UIBarButtonItem)?.title ?? ""
     let parameters = HomeTracking.getSelectButtonParameter(buttonName)
     HomeTracking.trackEvent(name: .showDetails, parameters: parameters)
@@ -163,6 +182,7 @@ If you need examples unsing GA, take a look at [`demo project`](https://github.c
 - If you have a feature request, open an issue.
 - If you want to contribute, submit a pull request. 👨🏻‍💻
 
+Trello [`Board`](https://trello.com/b/IapEnelI)
 ## 📜 License
 
 **BaseTracking** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE) file for more info.

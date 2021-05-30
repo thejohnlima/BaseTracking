@@ -3,13 +3,12 @@
 //  GADemo
 //
 //  Created by John Lima on 13/03/19.
-//  Copyright © 2019 limadeveloper. All rights reserved.
+//  Copyright © 2019 thejohnlima. All rights reserved.
 //
 //  **********************************
-//  Example unsing Google Analytics
+//  Example using Google Analytics
 //  **********************************
 
-import Foundation
 import BaseTracking
 
 final class TrackingManager {
@@ -20,72 +19,58 @@ final class TrackingManager {
   
   // MARK: - Properties
   private var gaID = String()
-  
-  // MARK: - Singleton
+
   static let shared = TrackingManager()
   
   // MARK: - Initializers
   private init() {}
-  
-  // MARK: - Private Methods
-  private func configureAnalytics() {
+}
+
+// MARK: - BaseTrackingProtocol
+extension TrackingManager: BaseTrackingProtocol {
+  func configure() {
     gaID = gaProductionID
-    
+
     let googleAnalytics = GAI.sharedInstance()
     googleAnalytics?.trackUncaughtExceptions = true
-    
-    #if DEVELOPMENT
+
+    #if DEBUG
     gaID = gaDevelopID
     googleAnalytics?.logger.logLevel = .verbose
     #endif
-    
+
     let tracker = googleAnalytics?.tracker(withTrackingId: gaID)
     tracker?.allowIDFACollection = true
   }
   
-  private func tracking(view name: BaseTrackingViewData) {
-    
-    let tracker = GAI.sharedInstance().tracker(withTrackingId: self.gaID)
-    tracker?.set(kGAIScreenName, value: name.name)
-    
-    let gaiMutableDictionary = GAIDictionaryBuilder.createScreenView().build()
-    
-    if let gaiDictionary = gaiMutableDictionary as? [AnyHashable: Any] {
-      tracker?.send(gaiDictionary)
-    }
-  }
-  
-  private func tracking(event: BaseTrackingEventData) {
-    
-    let tracker = GAI.sharedInstance().tracker(withTrackingId: self.gaID)
-    
-    let gaiMutableDictionary = GAIDictionaryBuilder.createEvent(
-      withCategory: event.category,
-      action: event.action,
-      label: event.label,
-      value: event.value
-    )
-    
-    if let gaiDictionary = gaiMutableDictionary?.build() as? [AnyHashable: Any] {
-      tracker?.send(gaiDictionary)
-    }
-  }
-}
-
-extension TrackingManager: BaseTrackingProtocol {
-  func configure() {
-    configureAnalytics()
-  }
-  
   func track(event data: BaseTrackingEventData) {
-    tracking(event: data)
+    let tracker = GAI.sharedInstance().tracker(withTrackingId: self.gaID)
+
+    let dictionary = GAIDictionaryBuilder.createEvent(
+      withCategory: data.category,
+      action: data.action,
+      label: data.label,
+      value: data.value
+    )
+
+    if let dictionary = dictionary?.build() as? [AnyHashable: Any] {
+      tracker?.send(dictionary)
+    }
   }
   
   func track(view data: BaseTrackingViewData) {
-    tracking(view: data)
+    let tracker = GAI.sharedInstance().tracker(withTrackingId: self.gaID)
+    tracker?.set(kGAIScreenName, value: data.name)
+
+    let dictionary = GAIDictionaryBuilder.createScreenView().build()
+
+    if let dictionary = dictionary as? [AnyHashable: Any] {
+      tracker?.send(dictionary)
+    }
   }
 }
 
+// MARK: - BaseTrackingEvent
 extension BaseTrackingEvent {
   static func trackView(name: ScreenView) {
     let data = BaseTrackingViewData(
