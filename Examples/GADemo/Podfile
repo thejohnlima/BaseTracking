@@ -1,4 +1,4 @@
-platform :ios, '9.3'
+platform :ios, '12.1'
 
 target 'GADemo' do
   use_frameworks!
@@ -6,6 +6,14 @@ target 'GADemo' do
 
   # Pods for GADemo
   pod 'GoogleAnalytics'
-  pod 'BaseTracking', :git => 'https://github.com/limadeveloper/BaseTracking.git', :branch => 'master'
+  pod 'BaseTracking', :path => '../../'
 
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+    end
+  end
 end

@@ -6,7 +6,6 @@
 //  Copyright © 2019 John Lima. All rights reserved.
 //
 
-import Foundation
 import BaseTracking
 
 struct HomeTracking: BaseTrackingEvent {
@@ -19,13 +18,18 @@ struct HomeTracking: BaseTrackingEvent {
   }
   
   enum EventAction: String {
-    case showDetails = "show_home_details"
+    case openMenu = "home_open_menu"
+    case showDetails = "home_open_details"
   }
   
   typealias EventLabel = CustomRawRepresentable
 }
 
 extension HomeTracking {
+
+  /// Prepare the parameters using dynamic values
+  /// - Parameter value: Dynamic value
+  /// - Returns: Event Parameters
   static func getSelectButtonParameter(_ value: Any) -> EventLabel? {
     let item = "button name - \(value)"
     return EventLabel(rawValue: item)

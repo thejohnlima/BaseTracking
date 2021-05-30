@@ -3,13 +3,14 @@
 //  GADemo
 //
 //  Created by John Lima on 13/03/19.
-//  Copyright © 2019 limadeveloper. All rights reserved.
+//  Copyright © 2019 thejohnlima. All rights reserved.
 //
 
 import UIKit
 
 class HomeViewController: UIViewController {
-  
+
+  // MARK: - View LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
   }
@@ -18,10 +19,17 @@ class HomeViewController: UIViewController {
     super.viewWillAppear(animated)
     HomeTracking.trackView(name: .home)
   }
-  
-  @IBAction private func showDetails(sender: Any?) {
+
+  // MARK: - Actions
+  @IBAction private func openMenu(_ sender: Any?) {
+    // Example using static values
+    HomeTracking.trackEvent(category: .home, action: .openMenu)
+  }
+
+  @IBAction private func showDetails(_ sender: Any?) {
+    // Example using dynamic values
     let buttonName = (sender as? UIBarButtonItem)?.title ?? ""
-    let label = HomeTracking.getSelectButtonParameter(buttonName)
+    let label = HomeTracking.getSelectButtonParameter(buttonName.lowercased())
     HomeTracking.trackEvent(category: .home, action: .showDetails, label: label)
   }
 }
