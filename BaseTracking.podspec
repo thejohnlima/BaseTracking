@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               = "BaseTracking"
-  s.version            = "1.0.4"
+  s.version            = "1.0.5"
   s.summary            = "BaseTracking is the easiest way to setup your analytics in Swift"
   s.requires_arc       = true
   s.homepage           = "https://github.com/thejohnlima/BaseTracking"

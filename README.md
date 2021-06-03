@@ -174,7 +174,7 @@ class HomeViewController: UIViewController {
 }
 ```
 
-If you need examples unsing GA, take a look at [`demo project`](https://github.com/thejohnlima/BaseTracking/tree/master/Examples/GADemo).
+If you need examples unsing [Google Analytics](https://analytics.google.com) or [Segment Analytics](http://segment.com), feel free to take a look at [`demo projects`](https://github.com/thejohnlima/BaseTracking/tree/master/Examples/).
 
 ## 🙋🏻‍ Communication
 
