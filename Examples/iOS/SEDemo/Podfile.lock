@@ -1,13 +1,13 @@
 PODS:
   - Analytics (4.1.4)
-  - BaseTracking (1.0.4)
+  - BaseTracking (1.0.5)
   - KeychainSwift (19.0.0)
   - LMStorage (1.0.1):
     - KeychainSwift
 
 DEPENDENCIES:
   - Analytics
-  - BaseTracking (from `../../`)
+  - BaseTracking (from `../../../`)
   - LMStorage
 
 SPEC REPOS:
@@ -18,14 +18,14 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   BaseTracking:
-    :path: "../../"
+    :path: "../../../"
 
 SPEC CHECKSUMS:
   Analytics: 7bdc735c456434b4eaa2eacdcf122bb03d51ede7
-  BaseTracking: 43a0d8806d3b0beb12ec9ace05c7fc43e197f90f
+  BaseTracking: f02dd474f474dd2298429c2ad93037a9195cd5d7
   KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
   LMStorage: 2ecbdb40eeda05e6a5d324c282b2ff5d684c3387
 
-PODFILE CHECKSUM: 3e5bb8cab8bc4860abc4b8f446f1e165b50f4249
+PODFILE CHECKSUM: cdf4d924ce4794765dea0f5079abd8edaf81e8ee
 
 COCOAPODS: 1.10.1
