@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.1'
+
+target 'SEDemo' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for SEDemo
+  pod 'Analytics'
+  pod 'BaseTracking', :path => '../../../'
+  pod 'LMStorage'
+
+end
