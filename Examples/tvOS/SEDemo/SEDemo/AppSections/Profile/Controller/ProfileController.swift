@@ -9,13 +9,24 @@ import UIKit
 
 class ProfileController: UIViewController {
 
+  @IBOutlet private weak var updateButton: UIButton!
+  @IBOutlet private weak var resetButton: UIButton!
+
   override func viewDidLoad() {
     super.viewDidLoad()
+    setNeedsFocusUpdate()
   }
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     ProfileTracking.trackView(name: .profile)
+  }
+
+  override var preferredFocusedView: UIView? {
+    if updateButton.isFocused {
+      return resetButton
+    }
+    return updateButton
   }
 
   @IBAction private func updateProfile() {
