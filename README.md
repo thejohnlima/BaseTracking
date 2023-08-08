@@ -4,17 +4,11 @@
  <a href="https://github.com/thejohnlima/BaseTracking/releases">
   <img src="https://img.shields.io/github/v/release/thejohnlima/BaseTracking?style=for-the-badge">
  </a>
- <a href="https://github.com/thejohnlima/BaseTracking/actions">
-  <img src="https://img.shields.io/github/workflow/status/thejohnlima/BaseTracking/CI/master?style=for-the-badge">
- </a>
  <a href="https://cocoapods.org/pods/BaseTracking">
   <img src="https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=for-the-badge">
  </a><br>
  <a href="https://github.com/thejohnlima/BaseTracking">
   <img src="https://img.shields.io/github/repo-size/thejohnlima/BaseTracking.svg?style=for-the-badge">
- </a>
- <a href="https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE">
-  <img src="https://img.shields.io/github/license/thejohnlima/BaseTracking.svg?style=for-the-badge">
  </a>
  <a href="https://developer.apple.com/ios/">
   <img src="https://img.shields.io/cocoapods/p/BaseTracking?style=for-the-badge">
@@ -22,8 +16,8 @@
  <a href="https://developer.apple.com/swift/">
   <img src="https://img.shields.io/badge/Swift-5-blue.svg?style=for-the-badge">
  </a>
- <a href="https://paypal.me/johncls">
-  <img src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge">
+ <a href="https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE">
+  <img src="https://img.shields.io/github/license/thejohnlima/BaseTracking.svg?style=for-the-badge">
  </a>
 </p>
 
@@ -186,3 +180,7 @@ Trello [`Board`](https://trello.com/b/IapEnelI)
 ## 📜 License
 
 **BaseTracking** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/thejohnlima/BaseTracking/master/LICENSE) file for more info.
+
+## ☕️ Support
+
+<a href="https://www.buymeacoffee.com/thejohnlima" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
